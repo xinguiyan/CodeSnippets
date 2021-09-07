@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>reqlaunch</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    @weakify(self);
+    ReqPackage *req = &lt;#请求接口#&gt;;
+    req.success = ^(int errorCode, NSString * _Nonnull errorMsg, id  _Nullable data) {
+        @strongify(self);
+        if (!self) return;
+        
+        [MBProgressHUD hideAllTipsInView:self.view];
+        [MBProgressHUD showSucceed:errorMsg inView:self.view];
+    };
+    req.failure = ^(int errorCode, NSString * _Nonnull errorMsg) {
+        @strongify(self);
+        if (!self) return;
+        
+        [MBProgressHUD hideAllTipsInView:self.view];
+        [MBProgressHUD showError:errorMsg inView:self.view];
+    };
+    [req launch];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>608EECDB-E14A-440B-92D6-BC711F6AAB99</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>请求接口</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

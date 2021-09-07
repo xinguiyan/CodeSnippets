@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>collectioninit</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+layout.minimumLineSpacing = &lt;#滚动方向的间距#&gt;;
+layout.minimumInteritemSpacing = &lt;#滚动方向垂直的间距#&gt;;
+layout.itemSize = CGSizeMake(&lt;#宽#&gt;, &lt;#高#&gt;);
+layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+
+UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
+collectionView.dataSource = self;
+collectionView.delegate = self;
+collectionView.pagingEnabled = YES;
+collectionView.showsHorizontalScrollIndicator = NO;
+collectionView.backgroundColor = &lt;#背景色#&gt;;
+[collectionView registerClass:UICollectionViewCell.class
+   forCellWithReuseIdentifier:NSStringFromClass(UICollectionViewCell.class)];
+
+collectionView;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8115A4E7-9EF4-4BF5-98F3-CD0331817FB3</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UICollectionView init</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>tabledd</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// MARK: - UITableViewDataSource
+
+func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -&gt; Int {
+    let count: Int = &lt;#数量#&gt;
+    return count
+}
+
+func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&gt; UITableViewCell {
+    let identifier = NSStringFromClass(&lt;#Cell类#&gt;.self)
+    let cell = tableView.dequeueReusableCell(withIdentifier: identifier) as! &lt;#Cell类#&gt;
+    cell.selectionStyle = .none
+    return cell
+}
+
+// MARK: - UITableViewDelegate
+
+func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>AB53B6DC-2BE0-4D95-A216-2D9316301F3B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Swift UITableView DataSource &amp; Delegate</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

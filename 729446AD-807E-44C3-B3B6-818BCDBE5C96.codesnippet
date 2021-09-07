@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>buttoninit</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+button.backgroundColor = &lt;#背景色#&gt;;
+button.titleLabel.font = &lt;#字体#&gt;;
+[button setTitle:&lt;#标题#&gt; forState:UIControlStateNormal];
+[button setTitleColor:&lt;#标题色#&gt; forState:UIControlStateNormal];
+[button addTarget:self action:@selector(&lt;#动作#&gt;) forControlEvents:UIControlEventTouchUpInside];
+button;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>729446AD-807E-44C3-B3B6-818BCDBE5C96</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIButton init</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
